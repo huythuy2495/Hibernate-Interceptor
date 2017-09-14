@@ -1,0 +1,4 @@
+# Hibernate-Interceptor
+#
+In this example we are going to see how to use Hibernate Interceptor. During a Hinernate transaction, an object might go through a number of phases: it is created, it gets updated, it gets persisted or deleted. An Interceptor detects the most basic events in the database, like CRUD operations. On each events it fires up callback methods. There are numerus usages of this feature, and as you can imagine one of the most basic is logging.
+You can use an Interceptor to log a list of events that happend during. The thing is that you can use any logging methods or frameworks you want, so that makes your program easily extendible. Or you can even log your events in a database table without using any logging framworks or the client machine’s file system, which make it more portable.
